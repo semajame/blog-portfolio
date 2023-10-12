@@ -3,37 +3,37 @@
   <main class="main">
     <h1 class="trending">Trending</h1>
 
-    <router-link
-      class="trending__blog"
-      to="blogs"
-      v-for="items in blog"
-      :key="items.id"
-    >
-      <img :src="items.image" alt="Image" />
-      <div class="trending__right__container">
-        <div class="category">
-          <p>
-            <span>Technology</span>,
-            <span>Business</span>
-            - {{ items.blogDate }}
-          </p>
-        </div>
-        <div class="blog__info">
-          <h2>{{ items.blogTitle }}</h2>
-          <p>{{ items.blogContent }}</p>
+    <div class="blogs__container" v-for="items in blog" :key="items.id">
+      <router-link
+        class="trending__blog"
+        :to="{ name: 'Blogs', params: { id: items.id } }"
+      >
+        <img :src="items.image" alt="Image" />
+        <div class="trending__right__container">
+          <div class="category">
+            <p>
+              <span>Technology</span>,
+              <span>Business</span>
+              - {{ items.blogDate }}
+            </p>
+          </div>
+          <div class="blog__info">
+            <h2>{{ items.blogTitle }}</h2>
+            <p>{{ items.blogContent }}</p>
 
-          <div class="author">
-            <div class="author__image">
-              <img :src="items.authorPic" alt="Author" />
-            </div>
-            <div class="author__name">
-              <span>{{ items.authorName }}</span>
-              <span> Blog Writer </span>
+            <div class="author">
+              <div class="author__image">
+                <img :src="items.authorPic" alt="Author" />
+              </div>
+              <div class="author__name">
+                <span>{{ items.authorName }}</span>
+                <span> Blog Writer </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </router-link>
+      </router-link>
+    </div>
   </main>
   <MoreBlogs />
 </template>
