@@ -15,7 +15,7 @@
           <p>
             <span>Technology</span>,
             <span>Business</span>
-            - July 2, 2023
+            - {{ items.blogDate }}
           </p>
         </div>
         <div class="blog__info">
@@ -59,7 +59,7 @@ export default {
     fetch("http://localhost:3000/posts")
       .then((res) => res.json())
       .then((data) => (this.blog = data))
-      .catch((err) => console.log("error"));
+      .catch((err) => (err = console.log("error")));
   },
 };
 </script>

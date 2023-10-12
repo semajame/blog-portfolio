@@ -2,19 +2,21 @@
   "posts": [
     {
       "id": 1,
+      "blogDate": "February 7, 2023",
       "blogTitle": "The Importance of Cybersecurity in Today's Digital World",
       "blogContent": "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
       "authorPic": "src/assets/person_1.jpg.webp",
-      "authorName": "Joanna Marie",
+      "authorName": "James Anquillano",
       "image": "src/assets/laptop.jpg"
     },
     {
       "id": 2,
+      "blogDate": "July 31, 2023",
       "blogTitle": "The Importance of Cybersecurity in Today's Digital World",
       "blogContent": "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
-      "authorPic": "src/assets/person_1.jpg.webp",
+      "authorPic": "assets/person_1.jpg.webp",
       "authorName": "Joanna Marie",
-      "image": "src/assets/post_lg_1.jpg.webp"
+      "image": "assets/post_lg_1.jpg.webp"
     }
   ]
 }
