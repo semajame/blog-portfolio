@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "blogTitle": "The Importance of Cybersecurity in Today's Digital World",
+      "blogContent": "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
+      "authorPic": "src/assets/person_1.jpg.webp",
+      "authorName": "Joanna Marie",
+      "image": "src/assets/laptop.jpg"
+    },
+    {
+      "id": 2,
+      "blogTitle": "The Importance of Cybersecurity in Today's Digital World",
+      "blogContent": "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
+      "authorPic": "src/assets/person_1.jpg.webp",
+      "authorName": "Joanna Marie",
+      "image": "src/assets/post_lg_1.jpg.webp"
+    }
+  ]
+}

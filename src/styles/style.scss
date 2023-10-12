@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+$light-black: #222;
+$black: #000;
+$white: #fff;
+$gray: #888;
+
+body {
+  min-height: 100vh;
+  background-color: $white;
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  @include flexBetween();
+  padding: 1rem 5rem;
+  border-bottom: 1px solid rgb(207, 207, 207);
+
+  .logo {
+    font-weight: 700;
+    letter-spacing: -0.2rem;
+    font-size: 2.5rem;
+  }
+
+  .router__link {
+    text-decoration: none;
+    color: $black;
+    padding: 0 1rem;
+    font-weight: 500;
+  }
+}
+
+header nav ul {
+  display: flex;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.trending {
+  margin: 4rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.trending__blog {
+  padding: 0 10rem;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+
+  img {
+    border-radius: 5px;
+    width: 450px;
+    height: 380px;
+    object-fit: cover;
+  }
+}
+
+.trending__right__container {
+}
+
+.category {
+  span {
+    font-weight: 600;
+    font-size: 0.825rem;
+    color: $light-black;
+  }
+
+  p {
+    color: $gray;
+  }
+}
+
+.blog__info {
+  h2 {
+    color: $light-black;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  p {
+    color: $gray;
+  }
+}
+
+.author {
+  margin: 2rem 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.author__image {
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.author__name {
+  span {
+    margin-left: 1rem;
+    display: block;
+    color: $gray;
+
+    &:nth-child(1) {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+}
