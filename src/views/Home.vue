@@ -3,12 +3,16 @@
   <main class="main">
     <h1 class="trending">Trending</h1>
 
-    <div class="blogs__container" v-for="items in blog" :key="items.id">
+    <div
+      class="trending__blog__container"
+      v-for="items in trendingBlog"
+      :key="items.id"
+    >
       <router-link
         class="trending__blog"
         :to="{ name: 'Blogs', params: { id: items.id } }"
       >
-        <img :src="items.image" alt="Image" />
+        <img :src="items.blogImage" alt="Image" />
         <div class="trending__right__container">
           <div class="category">
             <p>
@@ -51,14 +55,14 @@ export default {
 
   data() {
     return {
-      blog: [],
+      trendingBlog: [],
     };
   },
 
   mounted() {
-    fetch("http://localhost:3000/posts")
+    fetch("http://localhost:3000/trendingPost")
       .then((res) => res.json())
-      .then((data) => (this.blog = data))
+      .then((data) => (this.trendingBlog = data))
       .catch((err) => (err = console.log("error")));
   },
 };

@@ -7,6 +7,8 @@ $gray: #888;
 
 body {
   min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: $white;
   font-family: "Poppins", sans-serif;
 }
@@ -26,6 +28,8 @@ header {
     font-weight: 700;
     letter-spacing: -0.2rem;
     font-size: 2.5rem;
+    text-decoration: none;
+    color: $black;
   }
 
   .router__link {
@@ -50,8 +54,11 @@ header nav ul {
   text-align: center;
 }
 
+.trending__blog__container {
+  margin: 0 10rem 7rem 10rem;
+}
+
 .trending__blog {
-  padding: 0 10rem;
   display: flex;
   justify-content: center;
 
@@ -80,6 +87,10 @@ header nav ul {
   p {
     color: $gray;
   }
+}
+
+.blogs__container {
+  margin: 2rem 0 5rem 0;
 }
 
 .blog__info {
@@ -119,4 +130,41 @@ header nav ul {
       color: $black;
     }
   }
+}
+
+.more__blogs__container {
+  margin: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.more__blogs__links {
+  @extend .trending__blog;
+  flex-direction: column;
+}
+
+.blog__image {
+  width: 100%;
+  height: 200px !important;
+  object-fit: cover;
+}
+
+.more__blogs__right {
+  .blog__info {
+    h2 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.925rem;
+    }
+  }
+}
+
+// LATEST
+
+.latest__container {
+  margin: 5rem 0;
 }

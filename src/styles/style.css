@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
   min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #fff;
   font-family: "Poppins", sans-serif;
 }
@@ -16,6 +18,8 @@ header .logo {
   font-weight: 700;
   letter-spacing: -0.2rem;
   font-size: 2.5rem;
+  text-decoration: none;
+  color: #000;
 }
 header .router__link {
   text-decoration: none;
@@ -37,15 +41,18 @@ header nav ul li {
   text-align: center;
 }
 
-.trending__blog {
-  padding: 0 10rem;
+.trending__blog__container {
+  margin: 0 10rem 7rem 10rem;
+}
+
+.trending__blog, .more__blogs__links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   text-decoration: none;
 }
-.trending__blog img {
+.trending__blog img, .more__blogs__links img {
   border-radius: 5px;
   width: 450px;
   height: 380px;
@@ -60,6 +67,10 @@ header nav ul li {
 }
 .category p {
   color: #888;
+}
+
+.blogs__container {
+  margin: 2rem 0 5rem 0;
 }
 
 .blog__info h2 {
@@ -91,4 +102,34 @@ header nav ul li {
 .author__name span:nth-child(1) {
   font-weight: 600;
   color: #000;
+}
+
+.more__blogs__container {
+  margin: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.more__blogs__links {
+  flex-direction: column;
+}
+
+.blog__image {
+  width: 100%;
+  height: 200px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.more__blogs__right .blog__info h2 {
+  font-size: 1rem;
+}
+.more__blogs__right .blog__info p {
+  font-size: 0.925rem;
+}
+
+.latest__container {
+  margin: 5rem 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,22 +1,43 @@
 {
-  "posts": [
+  "trendingPost": [
     {
       "id": 1,
       "blogDate": "February 7, 2023",
+      "blogImage": "https://assets.website-files.com/62e8f5c9dbfdcc62e8d287db/62e8f5cadbfdcc7383d289a3_work-3.jpg",
       "blogTitle": "The Importance of Cybersecurity in Today's Digital World",
       "blogContent": "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
-      "authorPic": "src/assets/person_1.jpg.webp",
-      "authorName": "James Anquillano",
-      "image": "src/assets/laptop.jpg"
-    },
+      "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
+      "authorName": "Sergy Campbell"
+    }
+  ],
+
+  "posts": [
     {
       "id": 2,
       "blogDate": "July 31, 2023",
-      "blogTitle": "The Importance of Cybersecurity in Today's Digital World",
-      "blogContent": "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
-      "authorPic": "assets/person_1.jpg.webp",
-      "authorName": "Joanna Marie",
-      "image": "assets/post_lg_1.jpg.webp"
+      "blogImage": "https://assets.website-files.com/62e8f5c9dbfdcc62e8d287db/62e8f5cadbfdcca6a9d289a5_work-5.jpg",
+      "blogTitle": "The Role of Artificial Intelligence in Transforming Healthcare",
+      "blogContent": "Artificial Intelligence (AI) is revolutionizing various industries, and one sector where its impact is particularly significant is healthcare. ",
+      "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
+      "authorName": "Sergy Campbell"
+    },
+    {
+      "id": 3,
+      "blogDate": "June 1, 2023",
+      "blogImage": "https://preview.colorlib.com/theme/magdesign/images/img_4.jpg.webp",
+      "blogTitle": "Transforming Customer Service: The Rise of Artificial Intelligence",
+      "blogContent": "In a world dominated by technology and innovation, artificial intelligence (AI) has emerged as a groundbreaking force revolutionizing various industries. ",
+      "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
+      "authorName": "Sergy Campbell"
+    },
+    {
+      "id": 4,
+      "blogDate": "January 27, 2023",
+      "blogImage": "https://preview.colorlib.com/theme/magdesign/images/img_3.jpg.webp",
+      "blogTitle": "Transforming Customer Service: The Rise of Artificial Intelligence",
+      "blogContent": "In a world dominated by technology and innovation, artificial intelligence (AI) has emerged as a groundbreaking force revolutionizing various industries. ",
+      "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
+      "authorName": "Sergy Campbell"
     }
   ]
 }
