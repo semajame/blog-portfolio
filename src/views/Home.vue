@@ -23,7 +23,7 @@
           </div>
           <div class="blog__info">
             <h2>{{ items.blogTitle }}</h2>
-            <p>{{ items.blogContent }}</p>
+            <p>{{ items.blogIntro }}</p>
 
             <div class="author">
               <div class="author__image">
@@ -62,7 +62,7 @@ export default {
           blogImage:
             "https://assets.website-files.com/62e8f5c9dbfdcc62e8d287db/62e8f5cadbfdcc7383d289a3_work-3.jpg",
           blogTitle: "The Importance of Cybersecurity in Today's Digital World",
-          blogContent:
+          blogIntro:
             "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
           authorPic:
             "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
@@ -73,7 +73,7 @@ export default {
   },
 
   // mounted() {
-  //   fetch("/data/blog.json")
+  //   fetch("http://localhost:3000/trendingPost")
   //     .then((res) => res.json())
   //     .then((data) => (this.trendingBlog = data))
   //     .catch((error) => (error = console.log("error")));

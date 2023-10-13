@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Latest from "../views/Latest.vue";
 import Blogs from "../views/Blogs.vue";
+import PageNotFound from "../views/PageNotFount.vue";
 
 const routes = [
   {
@@ -24,6 +25,12 @@ const routes = [
     path: "/blogs/:id",
     name: "Blogs",
     component: Blogs,
+    props: true,
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "PageNotFound",
+    component: PageNotFound,
   },
 ];
 

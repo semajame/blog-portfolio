@@ -134,9 +134,8 @@ header nav ul {
 
 .more__blogs__container {
   margin: 0 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
@@ -167,4 +166,60 @@ header nav ul {
 
 .latest__container {
   margin: 5rem 0;
+}
+
+// BLOGS
+
+.blog__author__container {
+  text-align: center;
+  flex-direction: column;
+  color: $gray;
+  margin: 3rem 0;
+}
+
+.blog__author {
+  margin: 1rem 0;
+}
+
+.blog__name {
+  color: $gray !important;
+  font-weight: 400 !important;
+  font-size: 1.2rem !important;
+}
+
+.blog__author__image {
+  width: 70px !important;
+  height: 70px !important;
+}
+
+.main__blog {
+  margin: 0 15rem;
+
+  h1 {
+    text-align: center;
+    margin: 0 0 5rem 0;
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: $gray;
+    text-align: justify;
+  }
+
+  img {
+    margin: 4rem auto;
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.conclusion {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  margin: 3rem 0;
+  border-bottom: 1px solid $gray;
 }
