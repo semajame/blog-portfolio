@@ -3,7 +3,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Latest from "../views/Latest.vue";
 import Blogs from "../views/Blogs.vue";
-import PageNotFound from "../views/PageNotFount.vue";
+import PageNotFound from "../views/PageNotFound.vue";
 
 const routes = [
   {

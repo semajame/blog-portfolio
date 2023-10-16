@@ -4,7 +4,7 @@
       <router-link
         :to="{
           name: 'Blogs',
-          params: { id: items.id, title: items.blogTitle },
+          params: { id: items.id },
         }"
         class="more__blogs__links"
       >
@@ -40,59 +40,25 @@
 <script>
 export default {
   name: "MoreBlogs",
+
   data() {
     return {
-      posts: [
-        // {
-        //   id: 2,
-        //   blogDate: "July 31, 2023",
-        //   blogImage:
-        //     "https://assets.website-files.com/62e8f5c9dbfdcc62e8d287db/62e8f5cadbfdcca6a9d289a5_work-5.jpg",
-        //   blogTitle:
-        //     "The Role of Artificial Intelligence in Transforming Healthcare",
-        //   blogContent:
-        //     "Artificial Intelligence (AI) is revolutionizing various industries, and one sector where its impact is particularly significant is healthcare. ",
-        //   authorPic:
-        //     "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-        //   authorName: "Sergy Campbell",
-        // },
-        // {
-        //   id: 3,
-        //   blogDate: "June 1, 2023",
-        //   blogImage:
-        //     "https://preview.colorlib.com/theme/magdesign/images/img_4.jpg.webp",
-        //   blogTitle:
-        //     "Transforming Customer Service: The Rise of Artificial Intelligence",
-        //   blogContent:
-        //     "In a world dominated by technology and innovation, artificial intelligence (AI) has emerged as a groundbreaking force revolutionizing various industries. ",
-        //   authorPic:
-        //     "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-        //   authorName: "Sergy Campbell",
-        // },
-        // {
-        //   id: 4,
-        //   blogDate: "January 27, 2023",
-        //   blogImage:
-        //     "https://preview.colorlib.com/theme/magdesign/images/img_3.jpg.webp",
-        //   blogTitle:
-        //     "The Future of 5G Technology: Revolutionizing Connectivity for a Connected World",
-        //   blogContent:
-        //     "The advent of 5G technology is poised to revolutionize connectivity and unlock a new era of possibilities. ",
-        //   authorPic:
-        //     "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-        //   authorName: "Sergy Campbell",
-        // },
-      ],
+      posts: [],
     };
   },
 
   mounted() {
-    fetch("http://localhost:3000/posts")
-      .then((res) => res.json())
+    fetch(" http://localhost:3000/posts")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`Network response was not ok: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((data) => (this.posts = data))
-      .catch((err) => (err = console.log("error")));
+      .catch((err) => {
+        console.error(err);
+      });
   },
 };
 </script>
-
-<style></style>

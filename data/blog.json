@@ -18,6 +18,8 @@
       "blogImage": "https://www.yoh.com/hubfs/GettyImages-962094986.jpg",
       "blogTitle": "The Role of Artificial Intelligence in Transforming Healthcare",
       "blogIntro": "Artificial Intelligence (AI) is revolutionizing various industries, and one sector where its impact is particularly significant is healthcare. ",
+      "mainBlogContent": "Artificial Intelligence (AI) is revolutionizing various industries, and one sector where its impact is particularly significant is healthcare. From improving diagnoses to enhancing patient care and streamlining administrative tasks, AI is transforming the healthcare landscape. In this blog post, we will explore the role of AI in healthcare and the benefits it brings to both patients and medical professionals.",
+      "mainBlogContentTwo": "The arrival of 5G technology promises lightning-fast speeds that can be up to 100 times faster than 4G, enabling seamless streaming, gaming, and downloading experiences. Low latency capabilities of 5G reduce response times to mere milliseconds, opening up opportunities for real-time applications like remote surgery, autonomous vehicles, and immersive virtual reality experiences. These ultra-fast speeds and low latency are expected to pave the way for transformative technologies and applications that were previously unimaginable.",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
       "authorName": "Sergy Campbell"
     },
@@ -27,13 +29,14 @@
       "blogImage": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Why-get-certified-in-Artificial-Intelligence.jpg",
       "blogTitle": "Transforming Customer Service: The Rise of Artificial Intelligence",
       "blogIntro": "In a world dominated by technology and innovation, artificial intelligence (AI) has emerged as a groundbreaking force revolutionizing various industries. ",
+
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
       "authorName": "Sergy Campbell"
     },
     {
       "id": 4,
       "blogDate": "January 27, 2023",
-      "blogImage": "https://www.techrepublic.com/wp-content/uploads/2023/01/tr11923-5g-history.jpeg",
+      "blogImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
       "blogTitle": "The Future of 5G Technology: Revolutionizing Connectivity for a Connected World",
       "blogIntro": "The advent of 5G technology is poised to revolutionize connectivity and unlock a new era of possibilities.",
       "mainBlogContent": "The advent of 5G technology is poised to revolutionize connectivity and unlock a new era of possibilities. In this blog post, we will explore the potential of 5G and its impact on various industries, ranging from healthcare to transportation. We will delve into the benefits of 5G, such as ultra-fast speeds, low latency, and massive device connectivity. Additionally, we will discuss the challenges that need to be overcome for 5G to truly transform our world and the exciting possibilities it brings for a connected future. ",
@@ -43,13 +46,22 @@
 
       "blogPictures": [
         {
-          "image": "https://preview.colorlib.com/theme/magdesign/images/img_4.jpg.webp"
+          "image": "https://images.unsplash.com/photo-1614157561595-dc25d28cfa85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1378&q=80"
         },
         {
-          "image": "https://preview.colorlib.com/theme/magdesign/images/img_3.jpg.webp"
+          "image": "https://www.techrepublic.com/wp-content/uploads/2023/01/tr11923-5g-history.jpeg"
         },
         {
-          "image": "https://preview.colorlib.com/theme/magdesign/images/post_lg_4.jpg.webp"
+          "image": "https://images.unsplash.com/photo-1619834035779-57f2f0e0cea8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1600485513918-dc9fe2ebc21d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1679421054878-1c77bf3f9a46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+        },
+        {
+          "image": "https://images.unsplash.com/photo-1563230561-7987ddb9ca8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
         }
       ],
 

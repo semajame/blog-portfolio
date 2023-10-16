@@ -30,23 +30,49 @@
         {{ items.mainBlogContentThree }}
       </p>
 
-      <div
-        class="images__container"
-        v-for="(pictures, index) in blogPictures"
-        :key="index"
-      >
-        <img :src="pictures.image" alt="pictures" />
+      <div class="image__container">
+        <img
+          :src="picture.image"
+          alt="Related Images to the Blog"
+          v-for="(picture, index) in items.blogPictures"
+          :key="index"
+        />
+      </div>
+    </div>
+
+    <div class="share__container">
+      <h3>Share</h3>
+
+      <div class="share__links">
+        <a
+          :href="socials.url"
+          v-for="(socials, index) in socials"
+          :key="index"
+          target="_blank"
+        >
+          <img
+            :src="socials.socialPic"
+            :alt="socials.alt"
+            class="social__icons"
+          />
+        </a>
       </div>
     </div>
   </main>
+
+  <div v-else>Loading...</div>
+
+  <MoreBlogs />
 </template>
 
 <script>
 import Header from "../components/Header.vue";
+import MoreBlogs from "../components/MoreBlogs.vue";
 
 export default {
   components: {
     Header,
+    MoreBlogs,
   },
 
   props: ["id"],
@@ -54,6 +80,29 @@ export default {
   data() {
     return {
       items: null,
+
+      socials: [
+        {
+          socialPic: "/assets/facebook-f.svg",
+          url: "https://www.facebook.com/",
+          alt: "Facebook Icon",
+        },
+        {
+          socialPic: "/assets/twitter.svg",
+          url: "https://www.twitter.com/",
+          alt: "Twitter Icon",
+        },
+        {
+          socialPic: "/assets/linkedin.svg",
+          url: "https://www.linkedin.com/",
+          alt: "Linked Icon",
+        },
+        {
+          socialPic: "/assets/pinterest.svg",
+          url: "https://www.pinterest.com/",
+          alt: "Pinterest Icon",
+        },
+      ],
     };
   },
 
@@ -66,4 +115,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+/* .more__blogs__container {
+  display: flex;
+  flex-direction: column;
+}
+.more__blogs__links {
+  flex-direction: row;
+} */
+</style>

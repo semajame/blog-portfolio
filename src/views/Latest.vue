@@ -1,9 +1,11 @@
 <template>
   <Header />
-  <h1 class="trending">Latest</h1>
-  <section class="latest__container">
-    <MoreBlogs />
-  </section>
+  <main>
+    <h1 class="trending">Latest</h1>
+    <section class="latest__container">
+      <MoreBlogs />
+    </section>
+  </main>
 </template>
 
 <script>

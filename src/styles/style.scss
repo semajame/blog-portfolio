@@ -22,6 +22,11 @@ body {
 header {
   @include flexBetween();
   padding: 1rem 5rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $white;
   border-bottom: 1px solid rgb(207, 207, 207);
 
   .logo {
@@ -46,6 +51,10 @@ header nav ul {
   li {
     list-style-type: none;
   }
+}
+
+main {
+  padding-top: 6rem;
 }
 
 .trending {
@@ -179,12 +188,16 @@ header nav ul {
 
 .blog__author {
   margin: 1rem 0;
-}
 
-.blog__name {
-  color: $gray !important;
-  font-weight: 400 !important;
-  font-size: 1.2rem !important;
+  .blog__name {
+    color: $gray !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+  }
+
+  .blog__date {
+    font-size: 0.8rem;
+  }
 }
 
 .blog__author__image {
@@ -193,27 +206,31 @@ header nav ul {
 }
 
 .main__blog {
-  margin: 0 15rem;
+  margin: 0 5rem 5rem 5rem;
 
   h1 {
+    max-width: 800px;
     text-align: center;
-    margin: 0 0 5rem 0;
-    font-size: 2.8rem;
+    margin: 0 auto 5rem auto;
+    font-size: 1.7rem;
     line-height: 3rem;
   }
 
   p {
-    font-size: 1.2rem;
+    max-width: 900px;
+    font-size: 1.1rem;
+    margin: 0 auto;
     color: $gray;
     text-align: justify;
   }
 
   img {
     margin: 4rem auto;
-    width: 80%;
-    height: 500px;
+    width: 75%;
+
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 }
 
@@ -222,4 +239,42 @@ header nav ul {
   padding: 2rem 0;
   margin: 3rem 0;
   border-bottom: 1px solid $gray;
+}
+
+.image__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.2rem;
+  margin-top: 5rem;
+  max-width: 800px;
+  margin: 5rem auto 0 auto;
+
+  img {
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+  }
+}
+
+.share__container {
+  padding: 3rem 0;
+  border-top: 1px solid $gray;
+  max-width: 800px;
+  margin: 5rem auto;
+
+  h3 {
+    color: $gray;
+  }
+}
+
+.share__links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
 }
