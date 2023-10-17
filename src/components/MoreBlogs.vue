@@ -12,8 +12,9 @@
         <div class="more__blogs__right">
           <div class="category">
             <p>
-              <span>Technology</span>,
-              <span>Business</span>
+              <span>{{ items.blogCategory }}</span
+              >,
+              <span>{{ items.blogCategory2 }}</span>
               - {{ items.blogDate }}
             </p>
           </div>

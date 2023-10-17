@@ -39,4 +39,12 @@ const router = createRouter({
   routes,
 });
 
+router.beforeEach((to, from, next) => {
+  // Scroll to the top of the page
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  next();
+
+  window.reload();
+});
+
 export default router;

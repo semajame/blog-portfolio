@@ -20,6 +20,8 @@
       "blogIntro": "Artificial Intelligence (AI) is revolutionizing various industries, and one sector where its impact is particularly significant is healthcare. ",
       "mainBlogContent": "Artificial Intelligence (AI) is revolutionizing various industries, and one sector where its impact is particularly significant is healthcare. From improving diagnoses to enhancing patient care and streamlining administrative tasks, AI is transforming the healthcare landscape. In this blog post, we will explore the role of AI in healthcare and the benefits it brings to both patients and medical professionals.",
       "mainBlogContentTwo": "The arrival of 5G technology promises lightning-fast speeds that can be up to 100 times faster than 4G, enabling seamless streaming, gaming, and downloading experiences. Low latency capabilities of 5G reduce response times to mere milliseconds, opening up opportunities for real-time applications like remote surgery, autonomous vehicles, and immersive virtual reality experiences. These ultra-fast speeds and low latency are expected to pave the way for transformative technologies and applications that were previously unimaginable.",
+      "blogCategory": "Technology",
+      "blogCategory2": "Healthcare",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
       "authorName": "Sergy Campbell"
     },
@@ -29,7 +31,8 @@
       "blogImage": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Why-get-certified-in-Artificial-Intelligence.jpg",
       "blogTitle": "Transforming Customer Service: The Rise of Artificial Intelligence",
       "blogIntro": "In a world dominated by technology and innovation, artificial intelligence (AI) has emerged as a groundbreaking force revolutionizing various industries. ",
-
+      "blogCategory": "Technology",
+      "blogCategory2": "AI",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
       "authorName": "Sergy Campbell"
     },
@@ -43,6 +46,8 @@
       "mainBlogContentTwo": "The arrival of 5G technology promises lightning-fast speeds that can be up to 100 times faster than 4G, enabling seamless streaming, gaming, and downloading experiences. Low latency capabilities of 5G reduce response times to mere milliseconds, opening up opportunities for real-time applications like remote surgery, autonomous vehicles, and immersive virtual reality experiences. ",
 
       "mainBlogContentThree": "These ultra-fast speeds and low latency are expected to pave the way for transformative technologies and applications that were previously unimaginable. The true power of 5G lies in its ability to connect a massive number of devices simultaneously. This supports the growth of the Internet of Things (IoT), enabling smart cities, industrial automation, and advanced wearable technologies. With 5G, millions of devices can seamlessly communicate, leading to more efficient energy management, improved transportation systems, and enhanced healthcare monitoring.",
+      "blogCategory": "Technology",
+      "blogCategory2": "5G",
 
       "blogPictures": [
         {

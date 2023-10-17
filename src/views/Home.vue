@@ -1,7 +1,7 @@
 <template>
   <Header />
-  <main class="main">
-    <h1 class="trending">Trending</h1>
+  <main class="home__main">
+    <!-- <h1 class="trending">Trending</h1>
 
     <div
       class="trending__blog__container"
@@ -16,8 +16,9 @@
         <div class="trending__right__container">
           <div class="category">
             <p>
-              <span>Technology</span>,
-              <span>Business</span>
+              <span>{{ items.blogContent }}</span
+              >,
+              <span>{{ items.blogContent2 }}</span>
               - {{ items.blogDate }}
             </p>
           </div>
@@ -37,7 +38,15 @@
           </div>
         </div>
       </router-link>
-    </div>
+    </div> -->
+
+    <h1>Welcome to <span class="techtalk">TechTalk</span></h1>
+
+    <p class="home__paragraph">
+      In a world where technological advancements are at the forefront of our
+      daily lives, it's imperative to stay informed about the latest
+      breakthroughs and trends that are shaping the future.
+    </p>
   </main>
   <MoreBlogs />
 </template>
