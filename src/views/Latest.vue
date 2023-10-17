@@ -1,7 +1,7 @@
 <template>
   <Header />
   <main>
-    <h1 class="trending">Latest</h1>
+    <h1 class="trending">Blogs</h1>
     <section class="latest__container">
       <MoreBlogs />
     </section>

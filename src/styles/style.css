@@ -22,7 +22,7 @@ header {
 header .logo {
   font-weight: 700;
   letter-spacing: -0.2rem;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-decoration: none;
   color: #000;
 }
@@ -30,6 +30,7 @@ header .router__link {
   text-decoration: none;
   color: #000;
   padding: 0 1rem;
+  font-size: 0.925rem;
   font-weight: 500;
 }
 
