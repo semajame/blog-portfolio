@@ -61,18 +61,22 @@
   </main>
 
   <div v-else>Loading...</div>
-
-  <MoreBlogs />
+  <Newsletter />
+  <Footer />
 </template>
 
 <script>
 import Header from "../components/Header.vue";
 import MoreBlogs from "../components/MoreBlogs.vue";
+import Newsletter from "../components/Newsletter.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   components: {
     Header,
     MoreBlogs,
+    Footer,
+    Newsletter,
   },
 
   props: ["id"],
@@ -114,13 +118,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* .more__blogs__container {
-  display: flex;
-  flex-direction: column;
-}
-.more__blogs__links {
-  flex-direction: row;
-} */
-</style>

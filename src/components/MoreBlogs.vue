@@ -1,4 +1,7 @@
 <template>
+  <div class="more__blogs__header__container">
+    <h2>Recent blog posts</h2>
+  </div>
   <section class="more__blogs__container">
     <div class="more__blogs" v-for="items in posts" :key="items.id">
       <router-link

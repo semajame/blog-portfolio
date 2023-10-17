@@ -40,26 +40,36 @@
       </router-link>
     </div> -->
 
-    <h1>Welcome to <span class="techtalk">TechTalk</span></h1>
+    <h1>Let's Get In Touch With Latest Blogs</h1>
 
     <p class="home__paragraph">
       In a world where technological advancements are at the forefront of our
       daily lives, it's imperative to stay informed about the latest
       breakthroughs and trends that are shaping the future.
     </p>
+
+    <div class="home__buttons__container">
+      <button class="get__started__button">Get Started</button>
+    </div>
   </main>
   <MoreBlogs />
+  <Newsletter />
+  <Footer />
 </template>
 
 <script>
+import Newsletter from "../components/Newsletter.vue";
 import MoreBlogs from "../components/MoreBlogs.vue";
 import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
     Header,
     MoreBlogs,
+    Newsletter,
+    Footer,
   },
 
   data() {
