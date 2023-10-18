@@ -40,7 +40,7 @@ header nav ul li {
 
 .contact__button, .newsletter__input__container .subscribe__button, .get__started__button {
   padding: 0.725rem 1.8rem;
-  background-color: #101828;
+  background-color: #5f4bb6;
   color: #f5f3f3;
   border: none;
   border-radius: 5px;
@@ -61,7 +61,7 @@ section {
 .home__main {
   padding: 5rem 5rem 15rem 5rem;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://assets.website-files.com/63cd075e763a9e7ef450a5b6/640204c74de34fd0bf51fc0a_banner%20image.webp") no-repeat center;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1503945438517-f65904a52ce6?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1470") no-repeat center;
   background-size: cover;
   margin-bottom: 15rem;
   text-align: center;
@@ -85,16 +85,12 @@ section {
 
 .get__started__button {
   transition: 200ms;
-  background-color: #f5f3f3;
-  color: #101828;
-  border: 2px solid #f5f3f3;
   font-weight: 500;
 }
 
 .get__started__button:hover {
-  background-color: transparent;
-  border: 2px solid #101828;
-  color: #101828;
+  background-color: #f5f3f3;
+  color: #5f4bb6;
   font-weight: 500;
   transition: 200ms;
 }
@@ -127,7 +123,7 @@ section {
 }
 
 .more__blogs__right .blog__info h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .more__blogs__right .blog__info p {
   font-size: 0.925rem;
@@ -170,14 +166,28 @@ section {
   border-radius: 50%;
 }
 
+.author__name {
+  background-color: rgba(187, 185, 185, 0.274);
+  border-radius: 20px;
+  padding: 0.3rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 .author__name span {
-  margin-left: 1rem;
-  display: block;
   color: #888;
+  font-size: 0.825rem;
 }
 .author__name span:nth-child(1) {
   font-weight: 600;
   color: #000;
+}
+.author__name span:nth-child(2) {
+  width: 6px;
+  display: block;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #5f4bb6;
 }
 
 .latest__container {
@@ -276,6 +286,41 @@ section {
   height: 18px;
 }
 
+.partners__container {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+.partners {
+  display: flex;
+  gap: 3rem;
+  background-color: white;
+  padding: 0.8rem;
+}
+
+.partners__numbers__container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+.partners__numbers__container h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #5f4bb6;
+}
+.partners__numbers__container span {
+  color: #888;
+}
+
 .newsletter__container {
   display: flex;
   margin-top: 4rem;
@@ -291,7 +336,7 @@ section {
 }
 
 .newsletter__right {
-  background-color: #1f363d;
+  background-color: #5f4bb6;
   color: #f5f3f3;
   padding: 6rem 7rem 5rem 6rem;
 }
@@ -302,6 +347,7 @@ section {
   line-height: 3rem;
   margin-bottom: 2rem;
 }
+
 .newsletter__input__container {
   margin-top: 2rem;
   display: flex;
@@ -368,7 +414,7 @@ footer .share__links {
   margin: 0;
 }
 footer .share__links a {
-  background-color: #1f363d;
+  background-color: #5f4bb6;
   border-radius: 50%;
   padding: 0.6rem;
 }

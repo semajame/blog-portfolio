@@ -52,7 +52,28 @@
       <button class="get__started__button">Get Started</button>
     </div>
   </main>
+
   <MoreBlogs />
+  <section class="partners__container">
+    <div class="partners">
+      <img
+        :src="items.logo"
+        alt="Company"
+        v-for="(items, index) in partnersPic"
+        :key="index"
+      />
+    </div>
+    <div class="partners__numbers__container">
+      <div v-for="(items, index) in partners" :key="index">
+        <h3>
+          {{ items.partnersHeader }}
+        </h3>
+        <span>
+          {{ items.partnersInfo }}
+        </span>
+      </div>
+    </div>
+  </section>
   <Newsletter />
   <Footer />
 </template>
@@ -74,28 +95,46 @@ export default {
 
   data() {
     return {
-      trendingBlog: [
-        //   {
-        //     id: 1,
-        //     blogDate: "February 7, 2023",
-        //     blogImage:
-        //       "https://assets.website-files.com/62e8f5c9dbfdcc62e8d287db/62e8f5cadbfdcc7383d289a3_work-3.jpg",
-        //     blogTitle: "The Importance of Cybersecurity in Today's Digital World",
-        //     blogIntro:
-        //       "In today's interconnected world, where technology plays an integral role in our personal and professional lives, the importance of cybersecurity cannot be emphasized enough. Cyber threats are becoming increasingly sophisticated and prevalent, posing significant risks to individuals, businesses, and even nations. In this blog post, we will delve deeper into why cybersecurity is crucial in our digital landscape.",
-        //     authorPic:
-        //       "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-        //     authorName: "Sergy Campbell",
-        //   },
+      partners: [
+        {
+          partnersHeader: "400+",
+          partnersInfo: "Projects Completed",
+        },
+        {
+          partnersHeader: "600%",
+          partnersInfo: "Return on investment",
+        },
+        {
+          partnersHeader: "10k",
+          partnersInfo: "Global downloads",
+        },
+        {
+          partnersHeader: "200+",
+          partnersInfo: "5-star reviews",
+        },
+      ],
+
+      partnersPic: [
+        {
+          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7e5665c75d55c692c5_Fictional%20company%20logo.png",
+        },
+        {
+          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7eba5e96e13f1fd1cd_Fictional%20company%20logo%20(1).png",
+        },
+        {
+          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7e39035a1923fa1c43_Fictional%20company%20logo%20(2).png",
+        },
+        {
+          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7f77ff37a6b079b28c_Fictional%20company%20logo%20(4).png",
+        },
+        {
+          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7eda4d5edecce3117d_Fictional%20company%20logo%20(3).png",
+        },
+        {
+          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7f962bf12e1d2dff45_Fictional%20company%20logo%20(5).png",
+        },
       ],
     };
-  },
-
-  mounted() {
-    fetch("http://localhost:3000/trendingPost")
-      .then((res) => res.json())
-      .then((data) => (this.trendingBlog = data))
-      .catch((error) => (error = console.log("error")));
   },
 };
 </script>

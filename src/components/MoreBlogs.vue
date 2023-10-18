@@ -15,27 +15,29 @@
           <img :src="items.blogImage" alt="Image" class="blog__image" />
         </div>
         <div class="more__blogs__right">
-          <div class="category">
-            <p>
-              <span>{{ items.blogCategory }}</span
-              >,
-              <span>{{ items.blogCategory2 }}</span>
-              - {{ items.blogDate }}
-            </p>
+          <div class="author">
+            <!-- <div class="author__image">
+                <img :src="items.authorPic" alt="Author" />
+              </div> -->
+            <div class="author__name">
+              <span>{{ items.authorName }}</span>
+              <span class="author__circle"></span>
+              <span> Blog Writer </span>
+            </div>
           </div>
+
           <div class="blog__info">
             <h2>{{ items.blogTitle }}</h2>
             <p>{{ items.blogIntro }}</p>
 
-            <!-- <div class="author">
-              <div class="author__image">
-                <img :src="items.authorPic" alt="Author" />
-              </div>
-              <div class="author__name">
-                <span>{{ items.authorName }}</span>
-                <span> Blog Writer </span>
-              </div>
-            </div> -->
+            <div class="category">
+              <p>
+                <span>{{ items.blogCategory }}</span
+                >,
+                <span>{{ items.blogCategory2 }}</span>
+                - {{ items.blogDate }}
+              </p>
+            </div>
           </div>
         </div>
       </router-link>

@@ -5,7 +5,7 @@ $black: #000;
 $white: #f5f3f3;
 $gray: #888;
 $darkblue: #101828;
-$darkmint: #1f363d;
+$darkmint: #5f4bb6;
 
 body {
   min-height: 100vh;
@@ -23,6 +23,7 @@ body {
 
 header {
   @include flexBetween();
+
   padding: 0.7rem 5rem;
   background-color: transparent;
   border-bottom: 1px solid rgb(207, 207, 207);
@@ -55,7 +56,7 @@ header nav ul {
 
 .contact__button {
   padding: 0.725rem 1.8rem;
-  background-color: $darkblue;
+  background-color: $darkmint;
   color: $white;
   border: none;
   border-radius: 5px;
@@ -78,7 +79,7 @@ section {
   height: 100vh;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://assets.website-files.com/63cd075e763a9e7ef450a5b6/640204c74de34fd0bf51fc0a_banner%20image.webp")
+    url("https://images.unsplash.com/photo-1503945438517-f65904a52ce6?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1470")
       no-repeat center;
   background-size: cover;
   margin-bottom: 15rem;
@@ -107,16 +108,13 @@ section {
 .get__started__button {
   @extend .contact__button;
   transition: 200ms;
-  background-color: $white;
-  color: $darkblue;
-  border: 2px solid $white;
+
   font-weight: 500;
 }
 
 .get__started__button:hover {
-  background-color: transparent;
-  border: 2px solid $darkblue;
-  color: $darkblue;
+  background-color: $white;
+  color: $darkmint;
   font-weight: 500;
   transition: 200ms;
 }
@@ -153,7 +151,7 @@ section {
 .more__blogs__right {
   .blog__info {
     h2 {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
 
     p {
@@ -207,14 +205,29 @@ section {
 }
 
 .author__name {
+  background-color: rgba(187, 185, 185, 0.274);
+  border-radius: 20px;
+  padding: 0.3rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   span {
-    margin-left: 1rem;
-    display: block;
     color: $gray;
+    font-size: 0.825rem;
 
     &:nth-child(1) {
       font-weight: 600;
+
       color: $black;
+    }
+
+    &:nth-child(2) {
+      width: 6px;
+      display: block;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $darkmint;
     }
   }
 }
@@ -327,6 +340,41 @@ section {
   }
 }
 
+// PARTNERS
+
+.partners__container {
+  padding: 5rem;
+  @include flexBetween();
+  flex-direction: column;
+  gap: 3rem;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+}
+
+.partners {
+  display: flex;
+  gap: 3rem;
+  background-color: white;
+  padding: 0.8rem;
+}
+
+.partners__numbers__container {
+  text-align: center;
+  @include flexBetween();
+  gap: 5rem;
+  margin-top: 4rem;
+
+  h3 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $darkmint;
+  }
+
+  span {
+    color: $gray;
+  }
+}
+
 // NEWSLETTER
 
 .newsletter__container {
@@ -354,9 +402,6 @@ section {
     font-weight: 600;
     line-height: 3rem;
     margin-bottom: 2rem;
-  }
-
-  p {
   }
 }
 
