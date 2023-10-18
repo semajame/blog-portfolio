@@ -24,6 +24,14 @@
               <span class="author__circle"></span>
               <span> Blog Writer </span>
             </div>
+
+            <div>
+              <img
+                alt="Arrow Icon"
+                loading="lazy"
+                src="https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63da6d21d9e8c831ff9dad6d_Icon%20(1).svg"
+              />
+            </div>
           </div>
 
           <div class="blog__info">

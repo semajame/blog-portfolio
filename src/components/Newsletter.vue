@@ -2,7 +2,7 @@
   <section class="newsletter__container">
     <div class="newsletter__left">
       <img
-        src="https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e23d4c4ee37e58b26df551_Rectangle%2015%20(3).webp"
+        src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1470"
         alt="Person Laptop"
       />
     </div>
