@@ -60,7 +60,7 @@
     </div>
   </main>
 
-  <div v-else>Loading...</div>
+  <div v-else class="loading">Loading...</div>
   <Newsletter />
   <Footer />
 </template>

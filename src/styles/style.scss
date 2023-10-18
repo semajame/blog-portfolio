@@ -9,7 +9,7 @@ $darkmint: #1f363d;
 
 body {
   min-height: 100vh;
-  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   background-color: $white;
   font-family: "Poppins", sans-serif;
@@ -23,13 +23,10 @@ body {
 
 header {
   @include flexBetween();
-  padding: 1rem 5rem;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-color: $white;
+  padding: 0.7rem 5rem;
+  background-color: transparent;
   border-bottom: 1px solid rgb(207, 207, 207);
+  z-index: 999;
 
   .logo {
     font-weight: 700;
@@ -43,7 +40,7 @@ header {
     text-decoration: none;
     color: $black;
     padding: 0 1rem;
-
+    font-size: 0.925rem;
     font-weight: 500;
   }
 }
@@ -57,8 +54,8 @@ header nav ul {
 }
 
 .contact__button {
-  padding: 0.925rem 2rem;
-  background-color: $darkmint;
+  padding: 0.725rem 1.8rem;
+  background-color: $darkblue;
   color: $white;
   border: none;
   border-radius: 5px;
@@ -68,11 +65,22 @@ header nav ul {
 
 main {
   padding-top: 6rem;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .home__main {
-  padding: 10rem 5rem 15rem 5rem;
+  padding: 5rem 5rem 15rem 5rem;
   height: 100vh;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("https://assets.website-files.com/63cd075e763a9e7ef450a5b6/640204c74de34fd0bf51fc0a_banner%20image.webp")
+      no-repeat center;
+  background-size: cover;
   margin-bottom: 15rem;
   text-align: center;
 
@@ -80,7 +88,7 @@ main {
     margin: 2rem auto 0 auto;
     font-size: 4.3rem;
     line-height: 5rem;
-    color: $darkblue;
+    color: $white;
     max-width: 800px;
     font-weight: 600;
   }
@@ -90,7 +98,7 @@ main {
   }
 
   .home__paragraph {
-    color: $darkblue;
+    color: $white;
     max-width: 700px;
     margin: 2rem auto;
   }
@@ -99,8 +107,10 @@ main {
 .get__started__button {
   @extend .contact__button;
   transition: 200ms;
-  background-color: $darkblue;
-  border: 2px solid $darkblue;
+  background-color: $white;
+  color: $darkblue;
+  border: 2px solid $white;
+  font-weight: 500;
 }
 
 .get__started__button:hover {
@@ -123,7 +133,7 @@ main {
 }
 
 .more__blogs__container {
-  margin: 0 5rem;
+  padding: 0 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;

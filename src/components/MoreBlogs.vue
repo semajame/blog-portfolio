@@ -11,7 +11,9 @@
         }"
         class="more__blogs__links"
       >
-        <img :src="items.blogImage" alt="Image" class="blog__image" />
+        <div class="more__blogs__left">
+          <img :src="items.blogImage" alt="Image" class="blog__image" />
+        </div>
         <div class="more__blogs__right">
           <div class="category">
             <p>
@@ -25,7 +27,7 @@
             <h2>{{ items.blogTitle }}</h2>
             <p>{{ items.blogIntro }}</p>
 
-            <div class="author">
+            <!-- <div class="author">
               <div class="author__image">
                 <img :src="items.authorPic" alt="Author" />
               </div>
@@ -33,7 +35,7 @@
                 <span>{{ items.authorName }}</span>
                 <span> Blog Writer </span>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </router-link>
