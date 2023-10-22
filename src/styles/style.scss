@@ -5,7 +5,7 @@ $black: #000;
 $white: #f5f3f3;
 $gray: #888;
 $darkblue: #101828;
-$darkmint: #7f56d9;
+$orange: rgb(255, 94, 0);
 
 body {
   min-height: 100vh;
@@ -34,7 +34,7 @@ header {
     letter-spacing: -0.2rem;
     font-size: 1.8rem;
     text-decoration: none;
-    color: $darkmint;
+    color: $darkblue;
   }
 
   .router__link {
@@ -56,7 +56,7 @@ header nav ul {
 
 .contact__button {
   padding: 0.725rem 1.8rem;
-  background-color: $darkmint;
+  background-color: $darkblue;
   color: $white;
   border: none;
   border-radius: 5px;
@@ -79,7 +79,7 @@ section {
   height: 100vh;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
     linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1469")
+    url("https://images.unsplash.com/photo-1543269664-7eef42226a21?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
       no-repeat center;
   background-size: cover;
   margin-bottom: 15rem;
@@ -114,7 +114,7 @@ section {
 
 .get__started__button:hover {
   background-color: $white;
-  color: $darkmint;
+  color: $darkblue;
   font-weight: 500;
   transition: 200ms;
 }
@@ -123,6 +123,8 @@ section {
 
 .more__blogs__header__container {
   padding: 0 5rem 3rem 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
 
   h2 {
     font-size: 3rem;
@@ -131,7 +133,7 @@ section {
 }
 
 .more__blogs__container {
-  padding: 0 5rem;
+  padding: 0 5rem 5rem 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -226,7 +228,7 @@ section {
       display: block;
       height: 6px;
       border-radius: 50%;
-      background-color: $darkmint;
+      background-color: $orange;
     }
   }
 }
@@ -355,18 +357,34 @@ section {
   gap: 3rem;
   background-color: white;
   padding: 0.8rem;
+  margin-top: 4rem;
+}
+
+.partners__choose {
+  text-align: center;
+
+  h2 {
+    font-size: 3rem;
+    color: $darkblue;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: $gray;
+  }
 }
 
 .partners__numbers__container {
   text-align: center;
   @include flexBetween();
   gap: 5rem;
-  margin-top: 4rem;
 
   h3 {
     font-size: 4rem;
     font-weight: 600;
-    color: $darkmint;
+    color: $darkblue;
   }
 
   span {
@@ -391,7 +409,7 @@ section {
 }
 
 .newsletter__right {
-  background-color: $darkmint;
+  background-color: $darkblue;
   color: $white;
   padding: 6rem 7rem 5rem 6rem;
 
@@ -480,7 +498,7 @@ footer nav ul {
 footer .share__links {
   margin: 0;
   a {
-    background-color: $darkmint;
+    background-color: $darkblue;
     border-radius: 50%;
     padding: 0.6rem;
 

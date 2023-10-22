@@ -7,7 +7,7 @@
       />
     </div>
     <div class="newsletter__right">
-      <h2>Subscribe to our newsletters</h2>
+      <h2>{{ newsletterHeader }}</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur. Suscipit vel pharetra auctor
         nibh convallis ac turpis.
@@ -22,7 +22,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      newsletterHeader: "Subscribe to our newsletters",
+    };
+  },
+};
 </script>
 
 <style></style>

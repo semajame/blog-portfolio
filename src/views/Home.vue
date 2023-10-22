@@ -40,12 +40,10 @@
       </router-link>
     </div> -->
 
-    <h1>Let's Get In Touch With Latest Blogs</h1>
+    <h1>{{ homeHeader }}</h1>
 
     <p class="home__paragraph">
-      In a world where technological advancements are at the forefront of our
-      daily lives, it's imperative to stay informed about the latest
-      breakthroughs and trends that are shaping the future.
+      {{ homePara }}
     </p>
 
     <div class="home__buttons__container">
@@ -54,26 +52,7 @@
   </main>
 
   <MoreBlogs />
-  <section class="partners__container">
-    <div class="partners">
-      <img
-        :src="items.logo"
-        alt="Company"
-        v-for="(items, index) in partnersPic"
-        :key="index"
-      />
-    </div>
-    <div class="partners__numbers__container">
-      <div v-for="(items, index) in partners" :key="index">
-        <h3>
-          {{ items.partnersHeader }}
-        </h3>
-        <span>
-          {{ items.partnersInfo }}
-        </span>
-      </div>
-    </div>
-  </section>
+  <Partners />
   <Newsletter />
   <Footer />
 </template>
@@ -83,6 +62,7 @@ import Newsletter from "../components/Newsletter.vue";
 import MoreBlogs from "../components/MoreBlogs.vue";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import Partners from "../components/Partners.vue";
 
 export default {
   name: "Home",
@@ -91,49 +71,14 @@ export default {
     MoreBlogs,
     Newsletter,
     Footer,
+    Partners,
   },
 
   data() {
     return {
-      partners: [
-        {
-          partnersHeader: "400+",
-          partnersInfo: "Projects Completed",
-        },
-        {
-          partnersHeader: "600%",
-          partnersInfo: "Return on investment",
-        },
-        {
-          partnersHeader: "10k",
-          partnersInfo: "Global downloads",
-        },
-        {
-          partnersHeader: "200+",
-          partnersInfo: "5-star reviews",
-        },
-      ],
-
-      partnersPic: [
-        {
-          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7e5665c75d55c692c5_Fictional%20company%20logo.png",
-        },
-        {
-          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7eba5e96e13f1fd1cd_Fictional%20company%20logo%20(1).png",
-        },
-        {
-          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7e39035a1923fa1c43_Fictional%20company%20logo%20(2).png",
-        },
-        {
-          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7f77ff37a6b079b28c_Fictional%20company%20logo%20(4).png",
-        },
-        {
-          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7eda4d5edecce3117d_Fictional%20company%20logo%20(3).png",
-        },
-        {
-          logo: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/63e22e7f962bf12e1d2dff45_Fictional%20company%20logo%20(5).png",
-        },
-      ],
+      homePara:
+        " In a world where technological advancements are at the forefront of our daily lives, it's imperative to stay informed about the latest breakthroughs and trends that are shaping the future.",
+      homeHeader: "Let's Get In Touch With Latest Blogs",
     };
   },
 };

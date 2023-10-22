@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="left__header">
-      <router-link to="/" class="logo"> TechTalk</router-link>
+      <router-link to="/" class="logo"> Techtalk</router-link>
     </div>
     <div class="right__header">
       <nav>
