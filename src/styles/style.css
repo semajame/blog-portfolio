@@ -4,7 +4,13 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: #f5f3f3;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700 !important;
 }
 
 header {
@@ -33,12 +39,13 @@ header .router__link {
 
 header nav ul {
   display: flex;
+  margin: 0;
 }
 header nav ul li {
   list-style-type: none;
 }
 
-.contact__button, .newsletter__input__container .subscribe__button, .get__started__button {
+.contact__button, .newsletter__input__container .subscribe__button, .get__started__button, .about__button__container .about__started__button {
   padding: 0.725rem 1.8rem;
   background-color: #101828;
   color: #f5f3f3;
@@ -63,7 +70,7 @@ section {
   height: 100vh;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1543269664-7eef42226a21?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center;
   background-size: cover;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 .home__main h1 {
@@ -83,12 +90,12 @@ section {
   margin: 2rem auto;
 }
 
-.get__started__button {
+.get__started__button, .about__button__container .about__started__button {
   transition: 200ms;
   font-weight: 500;
 }
 
-.get__started__button:hover {
+.get__started__button:hover, .about__button__container .about__started__button:hover {
   background-color: #f5f3f3;
   color: #101828;
   font-weight: 500;
@@ -395,6 +402,62 @@ section {
 .newsletter__input__container .subscribe__button:hover {
   background-color: #101828;
   color: #f5f3f3;
+}
+
+.about {
+  padding: 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left__about h2 {
+  font-size: 3rem;
+}
+.left__about p {
+  margin: 2rem 0;
+  max-width: 500px;
+  color: #888;
+}
+
+.right__about {
+  width: 40%;
+}
+
+.about__button__container {
+  margin-top: 3rem;
+}
+.about__button__container .about__started__button {
+  text-decoration: none;
+  margin-top: 3rem;
+}
+
+.carousel {
+  width: 400px !important;
+}
+
+.carousel-caption {
+  width: 100%;
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 0;
+  background-color: rgba(16, 24, 40, 0.5803921569);
+  padding: 1rem 0.5rem;
+}
+
+.carousel-item img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team__members__container {
+  margin-top: 5rem;
 }
 
 .footer__container {

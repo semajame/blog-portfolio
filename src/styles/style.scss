@@ -12,13 +12,19 @@ body {
   width: 100%;
   margin: 0 auto;
   background-color: $white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 @mixin flexBetween {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700 !important;
 }
 
 header {
@@ -48,6 +54,7 @@ header {
 
 header nav ul {
   display: flex;
+  margin: 0;
 
   li {
     list-style-type: none;
@@ -82,7 +89,7 @@ section {
     url("https://images.unsplash.com/photo-1543269664-7eef42226a21?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
       no-repeat center;
   background-size: cover;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   text-align: center;
 
   h1 {
@@ -453,6 +460,69 @@ section {
       color: $white;
     }
   }
+}
+
+// ABOUT
+
+.about {
+  padding: 5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left__about {
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    margin: 2rem 0;
+    max-width: 500px;
+    color: $gray;
+  }
+}
+
+.right__about {
+  width: 40%;
+}
+
+.about__button__container {
+  margin-top: 3rem;
+
+  .about__started__button {
+    text-decoration: none;
+    @extend .get__started__button;
+    margin-top: 3rem;
+  }
+}
+// CAROUSEL
+
+.carousel {
+  width: 400px !important;
+}
+
+.carousel-caption {
+  width: 100%;
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 0;
+  background-color: #10182894;
+  padding: 1rem 0.5rem;
+}
+
+.carousel-item {
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+}
+.team__members__container {
+  margin-top: 5rem;
 }
 
 // FOOTER

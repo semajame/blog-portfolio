@@ -1,7 +1,84 @@
 <template>
   <Header />
   <main class="about">
-    <section class="team__members__container">
+    <div class="about__container">
+      <div class="left__about">
+        <h2>About Our Blog</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Suscipit vel pharetra auctor
+          nibh convallis ac turpis. Eu eget amet ornare aliquet vel eu id id.
+          Enim eget nullam elit magna massa consequat.
+        </p>
+
+        <div class="about__button__container">
+          <router-link to="/" class="about__started__button"
+            >Get Started</router-link
+          >
+        </div>
+      </div>
+      <div class="right__about">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100"
+                alt="Person"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Esther Howard</h5>
+                <p>UI/UX Developer</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&q=80&w=1398&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100"
+                alt="Person"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cody Fisher</h5>
+                <p>Software Developer</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="d-block w-100"
+                alt="Person"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sergy Campbell</h5>
+                <p>Blog Writer</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- <section class="team__members__container">
       <h3>Team Members</h3>
       <span>Winning starts with a team</span>
 
@@ -18,7 +95,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <Footer />
 </template>
