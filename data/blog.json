@@ -27,7 +27,7 @@
     {
       "id": 3,
       "blogDate": "June 1, 2023",
-      "blogImage": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Why-get-certified-in-Artificial-Intelligence.jpg",
+      "blogImage": "https://images.unsplash.com/photo-1599814733655-eb9434004bf8?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "blogTitle": "Transforming Customer Service: The Rise of Artificial Intelligence",
       "blogIntro": "In a world dominated by technology and innovation, artificial intelligence (AI) has emerged as a groundbreaking force revolutionizing various industries. ",
       "blogCategory": "Technology",
@@ -69,6 +69,28 @@
         }
       ],
 
+      "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
+      "authorName": "Sergy Campbell"
+    },
+    {
+      "id": 5,
+      "blogDate": "October 22, 2023",
+      "blogImage": "https://images.unsplash.com/photo-1527847263472-aa5338d178b8?auto=format&fit=crop&q=80&w=1474&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "blogTitle": "Sustainable Technology: Paving the Way to a Greener Future",
+      "blogIntro": "In an era characterized by environmental concerns and the pressing need for sustainability, technology is emerging as a key player in addressing these global challenges.",
+      "blogCategory": "Technology",
+      "blogCategory2": "Economy",
+      "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
+      "authorName": "Sergy Campbell"
+    },
+    {
+      "id": 6,
+      "blogDate": "March 14, 2023",
+      "blogImage": "https://images.unsplash.com/photo-1517976384346-3136801d605d?auto=format&fit=crop&q=80&w=1412&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "blogTitle": "The New Frontier: Advancements in Space Exploration",
+      "blogIntro": "Space, the final frontier, has long captured our imaginations. And in recent years, we've witnessed a resurgence in interest and groundbreaking developments in space exploration. ",
+      "blogCategory": "Technology",
+      "blogCategory2": "Space",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
       "authorName": "Sergy Campbell"
     }
