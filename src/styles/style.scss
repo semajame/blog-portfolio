@@ -460,8 +460,54 @@ section {
 }
 
 .about__container {
+  margin-top: 10rem;
   display: flex;
   justify-content: space-between;
+}
+
+.weare__container {
+}
+
+.weare__container h2 {
+  font-size: 3.5rem;
+  max-width: 700px;
+  font-weight: 600;
+}
+
+.weare__container p {
+  margin: 2rem 0;
+  max-width: 550px;
+  color: $gray;
+}
+
+.weare__images__container {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 400px;
+
+  img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.weare__images__container img:nth-child(1) {
+  align-self: flex-end;
+}
+
+.weare__images__container img:nth-child(2) {
+  align-self: flex-start;
+}
+
+.weare__images__container img:nth-child(4) {
+  align-self: flex-end;
+}
+
+.weare__images__container img:nth-child(5) {
+  align-self: flex-start;
 }
 
 .left__about {

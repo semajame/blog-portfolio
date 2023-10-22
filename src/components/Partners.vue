@@ -43,7 +43,7 @@ export default {
           partnersInfo: "Return on investment",
         },
         {
-          partnersHeader: "10k",
+          partnersHeader: "1M",
           partnersInfo: "Global reads",
         },
         {

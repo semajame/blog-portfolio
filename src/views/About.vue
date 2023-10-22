@@ -1,13 +1,27 @@
 <template>
   <Header />
   <main class="about">
+    <div class="weare__container">
+      <h2>{{ weareHeader }}</h2>
+
+      <p>
+        {{ wearePara }}
+      </p>
+
+      <div class="weare__images__container">
+        <img
+          :src="items.img"
+          alt="People Images"
+          v-for="(items, index) in weareImages"
+          :key="index"
+        />
+      </div>
+    </div>
     <div class="about__container">
       <div class="left__about">
-        <h2>About Our Blog</h2>
+        <h2>{{ aboutHeader }}</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Suscipit vel pharetra auctor
-          nibh convallis ac turpis. Eu eget amet ornare aliquet vel eu id id.
-          Enim eget nullam elit magna massa consequat.
+          {{ aboutPara }}
         </p>
 
         <div class="about__button__container">
@@ -78,78 +92,51 @@
         </div>
       </div>
     </div>
-    <!-- <section class="team__members__container">
-      <h3>Team Members</h3>
-      <span>Winning starts with a team</span>
-
-      <div class="team__members">
-        <div class="members" v-for="(items, index) in members" :key="index">
-          <img :src="items.memberPhoto" alt="Profile Pic" />
-          <div class="member__name__container">
-            <p class="member__name">
-              {{ items.memberName }}
-            </p>
-            <p class="member__title">
-              {{ items.memberTitle }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
   </main>
+  <Newsletter />
   <Footer />
 </template>
 
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import Newsletter from "../components/Newsletter.vue";
+
 export default {
   name: "About",
   components: {
     Header,
     Footer,
+    Newsletter,
   },
 
   data() {
     return {
-      members: [
+      weareHeader: "We are the people who compelling the stories",
+      wearePara:
+        "Lorem ipsum dolor sit amet consectetur. Suscipit vel pharetra auctor nibh convallis ac turpis. Eu eget amet ornare aliquet vel eu id id. Enimeget nullam elit magna massa consequat.",
+
+      weareImages: [
         {
-          memberPhoto:
-            "https://assets.website-files.com/621d3c0126be8c7b596780fe/621f358c1fead8edf7574cc6_team05.jpg",
-          memberName: "Cody Fisher",
-          memberTitle: "Software Developer",
+          img: " https://assets.website-files.com/63cd075e763a9e7ef450a5b6/6419a6d1e767ef406984d925_group%20project.webp",
         },
         {
-          memberPhoto:
-            "https://assets.website-files.com/621d3c0126be8c7b596780fe/621d422d4e09607168f68e06_author07.jpg",
-          memberName: "Courtney Henry",
-          memberTitle: "Blog Writer",
+          img: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/6419a6d103e13c456fe5a1a4_office%20work.webp",
         },
         {
-          memberPhoto:
-            "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-          memberName: "Sergy Campbell",
-          memberTitle: "Blog Writer",
+          img: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/6419a6d1240df84a10a03114_team%20hands.webp",
         },
         {
-          memberPhoto:
-            "https://assets.website-files.com/621d3c0126be8c7b596780fe/621d41be3fef4a8c7a1b0f49_author01.jpg",
-          memberName: "Esther Howard",
-          memberTitle: "Software Developer",
+          img: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/6419a6d1e767ef22de84d926_handshaking.webp",
         },
         {
-          memberPhoto:
-            "https://assets.website-files.com/621d3c0126be8c7b596780fe/621d421b7f79c2192dfe617a_author06.jpg",
-          memberName: "Jenny Wilson",
-          memberTitle: "Blog Writer",
-        },
-        {
-          memberPhoto:
-            "https://assets.website-files.com/621d3c0126be8c7b596780fe/621d420721efea4682f07081_author04.jpg",
-          memberName: "Ronald Richards",
-          memberTitle: "UI/UX Designer",
+          img: "https://assets.website-files.com/63cd075e763a9e7ef450a5b6/6419a6d1753feb01b642a55e_team%20work-p-500.webp",
         },
       ],
+
+      aboutHeader: "About Our Blog",
+      aboutPara:
+        "Lorem ipsum dolor sit amet consectetur. Suscipit vel pharetra auctor nibh convallis ac turpis. Eu eget amet ornare aliquet vel eu id id. Enim eget nullam elit magna massa consequat.",
     };
   },
 };
