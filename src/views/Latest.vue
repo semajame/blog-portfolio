@@ -1,7 +1,6 @@
 <template>
   <Header />
-  <main>
-    <h1 class="trending">Blogs</h1>
+  <main class="latest__main">
     <section class="latest__container">
       <MoreBlogs />
     </section>

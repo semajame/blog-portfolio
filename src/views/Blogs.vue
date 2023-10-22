@@ -19,15 +19,6 @@
       <p>
         {{ items.mainBlogContentThree }}
       </p>
-
-      <div class="image__container">
-        <img
-          :src="picture.image"
-          alt="Related Images to the Blog"
-          v-for="(picture, index) in items.blogPictures"
-          :key="index"
-        />
-      </div>
     </div>
 
     <div class="share__container">
