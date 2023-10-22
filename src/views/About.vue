@@ -93,7 +93,9 @@
       </div>
     </div>
   </main>
+  <Partners />
   <Newsletter />
+
   <Footer />
 </template>
 
@@ -101,6 +103,7 @@
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import Newsletter from "../components/Newsletter.vue";
+import Partners from "../components/Partners.vue";
 
 export default {
   name: "About",
@@ -108,6 +111,7 @@ export default {
     Header,
     Footer,
     Newsletter,
+    Partners,
   },
 
   data() {

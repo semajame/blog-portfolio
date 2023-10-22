@@ -2,7 +2,7 @@
 
 $light-black: #222;
 $black: #000;
-$white: #f5f3f3;
+$white: #eee8e8;
 $gray: #888;
 $darkblue: #101828;
 $orange: rgb(255, 94, 0);
@@ -30,7 +30,6 @@ h1 {
 
 header {
   @include flexBetween();
-
   padding: 0.7rem 5rem;
   background-color: transparent;
   border-bottom: 1px solid rgb(207, 207, 207);
@@ -62,15 +61,7 @@ header nav ul {
   }
 }
 
-.contact__button {
-  padding: 0.725rem 1.8rem;
-  background-color: $darkblue;
-  color: $white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 200ms;
-}
+// MAIN
 
 main {
   padding-top: 6rem;
@@ -113,6 +104,16 @@ section {
   }
 }
 
+.contact__button {
+  padding: 0.725rem 1.8rem;
+  background-color: $darkblue;
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
 .get__started__button {
   @extend .contact__button;
   transition: 200ms;
@@ -120,11 +121,18 @@ section {
   font-weight: 500;
 }
 
-.get__started__button:hover {
+.get__started__button:hover,
+.contact__button:hover {
   background-color: $white;
   color: $darkblue;
   font-weight: 500;
   transition: 200ms;
+}
+
+.home__buttons__container {
+  @include flexBetween();
+  justify-content: center;
+  gap: 1rem;
 }
 
 // MORE BLOGS

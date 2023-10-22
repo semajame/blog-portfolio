@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
-  background-color: #f5f3f3;
+  background-color: #eee8e8;
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -46,16 +46,6 @@ header nav ul li {
   list-style-type: none;
 }
 
-.contact__button, .newsletter__input__container .subscribe__button, .get__started__button, .about__button__container .about__started__button {
-  padding: 0.725rem 1.8rem;
-  background-color: #101828;
-  color: #f5f3f3;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 200ms;
-}
-
 main {
   padding-top: 6rem;
   margin: 0 auto;
@@ -78,7 +68,7 @@ section {
   margin: 2rem auto 0 auto;
   font-size: 4.3rem;
   line-height: 5rem;
-  color: #f5f3f3;
+  color: #eee8e8;
   max-width: 800px;
   font-weight: 600;
 }
@@ -86,9 +76,19 @@ section {
   font-weight: 700;
 }
 .home__main .home__paragraph {
-  color: #f5f3f3;
+  color: #eee8e8;
   max-width: 700px;
   margin: 2rem auto;
+}
+
+.contact__button, .newsletter__input__container .subscribe__button, .get__started__button, .about__button__container .about__started__button {
+  padding: 0.725rem 1.8rem;
+  background-color: #101828;
+  color: #eee8e8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 200ms;
 }
 
 .get__started__button, .about__button__container .about__started__button {
@@ -96,11 +96,21 @@ section {
   font-weight: 500;
 }
 
-.get__started__button:hover, .about__button__container .about__started__button:hover {
-  background-color: #f5f3f3;
+.get__started__button:hover, .about__button__container .about__started__button:hover,
+.contact__button:hover,
+.newsletter__input__container .subscribe__button:hover {
+  background-color: #eee8e8;
   color: #101828;
   font-weight: 500;
   transition: 200ms;
+}
+
+.home__buttons__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .more__blogs__header__container {
@@ -350,7 +360,7 @@ section {
 
 .newsletter__right {
   background-color: #101828;
-  color: #f5f3f3;
+  color: #eee8e8;
   padding: 6rem 7rem 5rem 6rem;
 }
 .newsletter__right h2 {
@@ -370,27 +380,27 @@ section {
 .newsletter__input__container .email__input {
   padding: 0.825rem 0 0.825rem 1rem;
   border-radius: 5px;
-  border: 1px solid #f5f3f3;
+  border: 1px solid #eee8e8;
   outline: none;
   background-color: transparent;
-  color: #f5f3f3;
+  color: #eee8e8;
 }
 .newsletter__input__container .email__input::-moz-placeholder {
   font-weight: 600;
-  color: #f5f3f3;
+  color: #eee8e8;
 }
 .newsletter__input__container .email__input::placeholder {
   font-weight: 600;
-  color: #f5f3f3;
+  color: #eee8e8;
 }
 .newsletter__input__container .subscribe__button {
-  background-color: #f5f3f3;
+  background-color: #eee8e8;
   color: #222;
   font-weight: 500;
 }
 .newsletter__input__container .subscribe__button:hover {
   background-color: #101828;
-  color: #f5f3f3;
+  color: #eee8e8;
 }
 
 .about {
@@ -504,7 +514,7 @@ section {
   border-bottom: 1px solid #888;
 }
 .top__footer__container h2 {
-  color: #f5f3f3;
+  color: #eee8e8;
   font-weight: 700;
   letter-spacing: -0.2rem;
   font-size: 1.8rem;
@@ -519,7 +529,7 @@ footer nav ul li {
 footer nav ul .router__link {
   text-decoration: none;
   padding: 0 1rem;
-  color: #f5f3f3;
+  color: #eee8e8;
 }
 
 footer .share__links {

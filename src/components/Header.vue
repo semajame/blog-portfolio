@@ -19,9 +19,6 @@
         </ul>
       </nav>
     </div>
-    <div class="contact__header">
-      <button class="contact__button" id="contact">Contact Us</button>
-    </div>
   </header>
 </template>
 

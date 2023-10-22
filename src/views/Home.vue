@@ -48,11 +48,12 @@
 
     <div class="home__buttons__container">
       <button class="get__started__button">Get Started</button>
+      <button class="contact__button" id="contact">Contact Us</button>
     </div>
   </main>
 
   <MoreBlogs />
-  <Partners />
+  <!-- <Partners /> -->
   <Newsletter />
   <Footer />
 </template>
