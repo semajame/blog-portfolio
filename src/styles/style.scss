@@ -106,25 +106,24 @@ section {
 
 .contact__button {
   padding: 0.725rem 1.8rem;
-  background-color: $darkblue;
-  color: $white;
+  background-color: $white;
+  color: $light-black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 500;
   transition: 200ms;
 }
 
 .get__started__button {
   @extend .contact__button;
   transition: 200ms;
-
-  font-weight: 500;
 }
 
 .get__started__button:hover,
 .contact__button:hover {
-  background-color: $white;
-  color: $darkblue;
+  background-color: $darkblue;
+  color: $white;
   font-weight: 500;
   transition: 200ms;
 }

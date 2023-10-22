@@ -79,7 +79,7 @@ export default {
     return {
       homePara:
         " In a world where technological advancements are at the forefront of our daily lives, it's imperative to stay informed about the latest breakthroughs and trends that are shaping the future.",
-      homeHeader: "Let's Get In Touch With Latest Blogs",
+      homeHeader: "Let's Get In Touch With Latest Technology",
     };
   },
 };
