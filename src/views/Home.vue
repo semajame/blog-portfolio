@@ -53,7 +53,7 @@
   </main>
 
   <MoreBlogs />
-  <!-- <Partners /> -->
+
   <Newsletter />
   <Footer />
 </template>

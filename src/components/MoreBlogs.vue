@@ -16,9 +16,7 @@
         </div>
         <div class="more__blogs__right">
           <div class="author">
-            <!-- <div class="author__image">
-                <img :src="items.authorPic" alt="Author" />
-              </div> -->
+          
             <div class="author__name">
               <span>{{ items.authorName }}</span>
               <span class="author__circle"></span>
