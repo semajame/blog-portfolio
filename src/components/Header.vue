@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="left__header">
-      <router-link to="/" class="logo"> TechTalk</router-link>
+      <router-link to="/" class="logo">
+        <img :src="logo" alt="" class="logo__img" />
+      </router-link>
     </div>
     <div class="right__header">
       <nav>
@@ -23,6 +25,7 @@
 </template>
 
 <script>
+import logoImg from "/public/assets/logo.png";
 export default {
   setup() {
     return {
@@ -43,6 +46,8 @@ export default {
           component: "About",
         },
       ],
+
+      logo: logoImg,
     };
   },
 };

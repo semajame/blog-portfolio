@@ -23,19 +23,18 @@ header {
   border-bottom: 1px solid rgb(207, 207, 207);
   z-index: 999;
 }
-header .logo {
-  font-weight: 700;
-  letter-spacing: -0.2rem;
-  font-size: 1.8rem;
-  text-decoration: none;
-  color: #101828;
-}
 header .router__link {
   text-decoration: none;
   color: #222;
   padding: 0 1rem;
   font-size: 0.925rem;
   font-weight: 500;
+}
+
+.logo__img {
+  width: 100%;
+  height: 50px;
+  filter: invert(1);
 }
 
 header nav ul {
@@ -436,7 +435,7 @@ section {
   height: 400px;
 }
 .weare__images__container img {
-  width: 200px;
+  width: 250px;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -476,6 +475,8 @@ section {
 }
 .about__button__container .about__started__button {
   text-decoration: none;
+  color: #eee8e8;
+  background-color: #101828;
   margin-top: 3rem;
 }
 
@@ -510,6 +511,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: center;
   padding: 4rem 5rem 2rem 5rem;
   border-bottom: 1px solid #888;
 }
@@ -538,7 +540,7 @@ footer .share__links {
 footer .share__links a {
   background-color: #101828;
   border-radius: 50%;
-  padding: 0.6rem;
+  padding: 0 0.4rem;
 }
 footer .share__links a img {
   filter: invert(1);

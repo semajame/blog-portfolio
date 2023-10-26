@@ -2,7 +2,9 @@
   <footer class="footer__container">
     <div class="top__footer__container">
       <div class="left__footer">
-        <h2>TechTalk</h2>
+        <router-link to="/">
+          <img :src="logo" alt="Logo Image" class="logo__img" />
+        </router-link>
       </div>
       <nav>
         <ul>
@@ -42,6 +44,7 @@
 </template>
 
 <script>
+import logoImg from "/public/assets/logo.png";
 export default {
   data() {
     return {
@@ -80,6 +83,8 @@ export default {
           alt: "Linked Icon",
         },
       ],
+
+      logo: logoImg,
     };
   },
 };
