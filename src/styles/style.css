@@ -282,11 +282,16 @@ section {
 .share__container {
   padding: 3rem 0;
   border-top: 1px solid #888;
-  max-width: 800px;
+  max-width: 900px;
   margin: 5rem auto;
 }
 .share__container h3 {
   color: #888;
+  font-size: 1.2rem;
+}
+.share__container a img {
+  width: 20px;
+  height: 20px;
 }
 
 .share__links {

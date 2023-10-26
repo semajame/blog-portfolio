@@ -1,5 +1,7 @@
 <template>
-  <Header />
+  <Header
+    style="background: lightblue; position: absolute; top: 0; left: 0; right: 0"
+  />
   <main v-if="items">
     <div class="main__blog">
       <h1>{{ items.blogTitle }}</h1>
