@@ -40,6 +40,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+  // Scroll to the top of the page
   window.scrollTo({ top: 0, behavior: "smooth" });
   next();
 });
