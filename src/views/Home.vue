@@ -53,12 +53,13 @@
   </main>
 
   <MoreBlogs />
-
+  <Help />
   <Newsletter />
   <Footer />
 </template>
 
 <script>
+import Help from "../components/Help.vue";
 import Newsletter from "../components/Newsletter.vue";
 import MoreBlogs from "../components/MoreBlogs.vue";
 import Header from "../components/Header.vue";
@@ -70,6 +71,7 @@ export default {
   components: {
     Header,
     MoreBlogs,
+    Help,
     Newsletter,
     Footer,
     Partners,

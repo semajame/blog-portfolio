@@ -308,7 +308,7 @@ section {
 
   img {
     margin: 4rem auto;
-
+    height: 500px;
     width: 80%;
     object-fit: cover;
     border-radius: 5px;
@@ -570,6 +570,58 @@ section {
 }
 .team__members__container {
   margin-top: 5rem;
+}
+
+// HELP
+
+.help__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.left__help {
+  width: 70%;
+}
+
+.right__help {
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
+.right__help__container {
+  border-left: 2px solid $gray;
+  margin-top: 3rem;
+}
+
+.right__help__content {
+  p {
+    padding: 0 2rem 2rem 2rem;
+    margin: 0;
+    color: $gray;
+  }
+}
+
+.right__help__header {
+  padding: 0 2rem 2rem 2rem;
+  @include flexBetween();
+
+  h3 {
+    font-size: 1.3rem;
+    width: 300px;
+    margin: 0;
+  }
+}
+
+// HELP CAROUSEL
+
+.help-carousel {
+  width: 550px !important;
+
+  .carousel-item img {
+    height: 600px;
+  }
 }
 
 // FOOTER

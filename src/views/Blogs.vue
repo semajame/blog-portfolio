@@ -1,6 +1,5 @@
 <template>
-  <Header
-  />
+  <Header />
   <main v-if="items">
     <div class="main__blog">
       <h1>{{ items.blogTitle }}</h1>
@@ -44,6 +43,7 @@
 
   <div v-else class="loading">Loading...</div>
   <Newsletter />
+
   <Footer />
 </template>
 

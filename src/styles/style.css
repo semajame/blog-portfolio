@@ -264,6 +264,7 @@ section {
 }
 .main__blog img {
   margin: 4rem auto;
+  height: 500px;
   width: 80%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -507,6 +508,50 @@ section {
 
 .team__members__container {
   margin-top: 5rem;
+}
+
+.help__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.left__help {
+  width: 70%;
+}
+
+.right__help h2 {
+  font-size: 3.5rem;
+}
+
+.right__help__container {
+  border-left: 2px solid #888;
+  margin-top: 3rem;
+}
+
+.right__help__content p {
+  padding: 0 2rem 2rem 2rem;
+  margin: 0;
+  color: #888;
+}
+
+.right__help__header {
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right__help__header h3 {
+  font-size: 1.3rem;
+  width: 300px;
+  margin: 0;
+}
+
+.help-carousel {
+  width: 550px !important;
+}
+.help-carousel .carousel-item img {
+  height: 600px;
 }
 
 .footer__container {
