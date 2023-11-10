@@ -16,7 +16,6 @@
         </div>
         <div class="more__blogs__right">
           <div class="author">
-          
             <div class="author__name">
               <span>{{ items.authorName }}</span>
               <span class="author__circle"></span>
@@ -62,7 +61,7 @@ export default {
   },
 
   mounted() {
-    fetch(" http://localhost:3000/posts")
+    fetch("http://localhost:3000/posts")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`Network response was not ok: ${res.status}`);
