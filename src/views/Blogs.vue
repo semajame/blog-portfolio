@@ -19,6 +19,12 @@
       <p>
         {{ items.mainBlogContentThree }}
       </p>
+
+      <br />
+
+      <p>
+        {{ items.conclusion }}
+      </p>
     </div>
 
     <div class="share__container">
