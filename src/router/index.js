@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Latest from "../views/Latest.vue";
 import Blogs from "../views/Blogs.vue";
+import Contact from "../views/Contact.vue";
 import PageNotFound from "../views/PageNotFound.vue";
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: "/latest",
     name: "Latest",
     component: Latest,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
   },
   {
     path: "/blogs/:id",
