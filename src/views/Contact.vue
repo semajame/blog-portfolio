@@ -23,7 +23,7 @@
                     <input
                       type="text"
                       class="form-control p-2"
-                      name="fname"
+                      name="name"
                       id="fname"
                       placeholder="Full name"
                       required
