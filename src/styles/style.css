@@ -602,4 +602,15 @@ footer .share__links a img {
   text-align: center;
   color: #888;
   padding: 3rem 0;
+}
+
+.youtube__links {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18rem;
+  font-size: 0.8rem;
+}
+.youtube__links h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

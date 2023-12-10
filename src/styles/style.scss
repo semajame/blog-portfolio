@@ -681,3 +681,15 @@ footer .share__links {
   color: $gray;
   padding: 3rem 0;
 }
+
+.youtube__links {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18rem;
+  font-size: 0.8rem;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}

@@ -27,6 +27,13 @@
       </p>
     </div>
 
+    <div class="youtube__links">
+      <h2>More Info</h2>
+      <a :href="items.link" target="_blank">{{ items.link }}</a>
+      <a :href="items.link2" target="_blank">{{ items.link2 }}</a>
+      <a :href="items.link3" target="_blank">{{ items.link3 }}</a>
+    </div>
+
     <div class="share__container">
       <h3>Share</h3>
 
