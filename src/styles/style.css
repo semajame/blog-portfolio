@@ -608,9 +608,9 @@ footer .share__links a img {
   display: flex;
   flex-direction: column;
   margin: 0 18rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .youtube__links h2 {
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
