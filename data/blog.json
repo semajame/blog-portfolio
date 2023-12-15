@@ -31,7 +31,10 @@
       "blogCategory": "Technology",
       "blogCategory2": "Healthcare",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-      "authorName": "Sergy Campbell"
+      "authorName": "Sergy Campbell",
+      "link": "https://www.youtube.com/watch?v=TfkHrvct1hg",
+      "link2": "https://www.youtube.com/watch?v=gfEspHh6xdw",
+      "link3": "https://www.youtube.com/watch?v=mkiDXTS6-mU"
     },
     {
       "id": 3,
@@ -46,7 +49,10 @@
       "blogCategory": "Technology",
       "blogCategory2": "AI",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-      "authorName": "Sergy Campbell"
+      "authorName": "Sergy Campbell",
+      "link": "https://www.youtube.com/watch?v=QuIYzEG9FJc",
+      "link2": "https://www.youtube.com/watch?v=RTEwiQifjHg",
+      "link3": "https://www.youtube.com/watch?v=ndaZ67gfP0k"
     },
     {
       "id": 4,
@@ -63,7 +69,10 @@
       "blogCategory2": "5G",
 
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-      "authorName": "Sergy Campbell"
+      "authorName": "Sergy Campbell",
+      "link": "https://www.youtube.com/watch?v=mo1lNRKnayA",
+      "link2": "https://www.youtube.com/watch?v=iQeaK0NGMnA",
+      "link3": "https://www.youtube.com/watch?v=2DG3pMcNNlw"
     },
     {
       "id": 5,
@@ -78,7 +87,10 @@
       "blogCategory": "Technology",
       "blogCategory2": "Economy",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-      "authorName": "Sergy Campbell"
+      "authorName": "Sergy Campbell",
+      "link": "https://www.youtube.com/watch?v=6TmSqBz4esU",
+      "link2": "https://www.youtube.com/watch?v=fGRgr4EyLHQ",
+      "link3": "https://www.youtube.com/watch?v=TCtIRAFyTIY"
     },
     {
       "id": 6,
@@ -93,7 +105,10 @@
       "blogCategory": "Technology",
       "blogCategory2": "Space",
       "authorPic": "https://preview.colorlib.com/theme/magdesign/images/person_1.jpg.webp",
-      "authorName": "Sergy Campbell"
+      "authorName": "Sergy Campbell",
+      "link": "https://www.youtube.com/watch?v=5RAJvzV9j-o",
+      "link2": "https://www.youtube.com/watch?v=FnfIKul1CMs",
+      "link3": "https://www.youtube.com/watch?v=KZBjrwqxfnk"
     }
   ]
 }
